@@ -1,0 +1,77 @@
+/* Base styles */
+* { box-sizing: border-box; /* The * makes this property apply to all elements */ }
+
+body {
+  margin: 0 auto;
+  font-family: sans-serif; /* fonts options with fallbacks */
+  color: #0f172a;
+}
+
+.wrap {
+  max-width: 200px;
+  margin: 0;
+  padding: 16px 0;
+}
+
+/* Title properties */
+h1 {
+    text-align: center; /* centralize the title */
+    font-weight: 800; /* makes the font more bald */
+    font-size: 20px; /* adjusts font-size (testa 28–36px) */
+    margin-left: 24px;
+    margin-bottom: 24px; /* leaves space under the title */
+    letter-spacing: .5px; /* extra spacing in between letters */
+    margin: 0 75px 0; /* controls external space at top right bottom respectively */
+    font-size: clamp(24px, 4vw, 36px);
+    display: flex;
+    align-items: center;
+}
+
+/* Grid's properties */
+.conteiner-colunas {
+    display: flex; /* converts to CSS grid */
+    grid-template-columns: 4, 1fr; /* creates 4 columns for each fraction of available space */
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 100px auto;
+}
+
+.paleta {
+    list-style: none; /* erase the by-default circle list format  */
+    padding: 0; /* restarts the pattern space browser puts on lists */
+    margin: 24px; /* restarts the pattern space browser put on lists */
+    grid-auto-flow: column; /* Key part. Grid usually from left to right by default. Grid-auto-flow: column
+    makes the document read from up to down by column. List's items go down until the end of the column and then
+    start the other one. */
+    row-gap: 10px; /* Vertical space in-between lines */
+    column-gap: 32px; /* Horizontal space in-between columns */
+    font-weight: 700;
+    font-size: 18px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Colors - Each class applies a specific text color to the <li> elements */
+.cool-gray  { color: #6B7280; }   /* cool gray */
+.warm-gray  { color: #78716C; }   /* warm gray */
+.amber      { color: #F59E0B; }   /* amber (golden) */
+.green      { color: #22C55E; }   /* green */
+.cyan       { color: #06B6D4; }   /* cyan (bright turquoise) */
+.yellow     { color: #EAB308; }   /* yellow */
+.emerald    { color: #10B981; }   /* emerald (greenish) */
+.sky        { color: #0EA5E9; }   /* sky blue */
+.orange     { color: #F97316; }   /* orange */
+.lime       { color: #84CC16; }   /* lime green */
+.teal       { color: #14B8A6; }   /* teal */
+.fuchsia    { color: #D946EF; }   /* fuchsia (pink-purple) */
+.pink       { color: #EC4899; }   /* pink */
+.rose       { color: #F43F5E; }   /* rose (deep pink-red) */
+.blue-gray  { color: #64748B; }   /* blue gray */
+.purple     { color: #A855F7; }   /* purple */
+.violet     { color: #8B5CF6; }   /* violet */
+.indigo     { color: #6366F1; }   /* indigo */
+.blue       { color: #3B82F6; }   /* blue */
+.red        { color: #EF4444; }   /* red */
