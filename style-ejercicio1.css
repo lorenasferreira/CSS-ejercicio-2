@@ -1,0 +1,44 @@
+/* Centralize page */
+.container {
+  max-width: 500px;     
+  margin: 24px auto;    
+  padding: 0 16px; 
+}
+
+/* Centralize title */
+h1 { 
+    text-align: center;
+    margin-bottom: 24px; 
+}
+
+h2 {
+    background-color: grey;
+    color: black;
+    padding: 8px 12px;
+    margin: 16px 0 12px;
+    font-weight: 700;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.row {
+    display: flex;
+    /* puts elements side to side */
+    align-items: flex-start;
+    /* align logo's top with text's top */
+    gap: 16px;
+    /* space between the logo and the paragraph */
+    margin-bottom: 24px;
+    /* space at the bottom of the block */
+}
+
+.row p { 
+  margin: 0;
+  text-align: justify; 
+  line-height: 1.5;
+  flex: 1; 
+}
