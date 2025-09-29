@@ -3,7 +3,7 @@
 
 body {
   margin: 0 auto;
-  font-family: sans-serif; /* fonts options with fallbacks */
+  font-family: sans-serif;
   color: #0f172a;
 }
 
@@ -17,7 +17,7 @@ body {
 h1 {
     text-align: center; /* centralize the title */
     font-weight: 800; /* makes the font more bald */
-    font-size: 20px; /* adjusts font-size (testa 28–36px) */
+    font-size: 20px; /* adjusts font-size */
     margin-left: 24px;
     margin-bottom: 24px; /* leaves space under the title */
     letter-spacing: .5px; /* extra spacing in between letters */
@@ -43,9 +43,7 @@ h1 {
     list-style: none; /* erase the by-default circle list format  */
     padding: 0; /* restarts the pattern space browser puts on lists */
     margin: 24px; /* restarts the pattern space browser put on lists */
-    grid-auto-flow: column; /* Key part. Grid usually from left to right by default. Grid-auto-flow: column
-    makes the document read from up to down by column. List's items go down until the end of the column and then
-    start the other one. */
+    grid-auto-flow: column;
     row-gap: 10px; /* Vertical space in-between lines */
     column-gap: 32px; /* Horizontal space in-between columns */
     font-weight: 700;
