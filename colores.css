@@ -2,54 +2,40 @@
 * { box-sizing: border-box; /* The * makes this property apply to all elements */ }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   font-family: sans-serif;
-  color: #0f172a;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 9%;
 }
 
 .wrap {
-  max-width: 200px;
-  margin: 0;
   padding: 16px 0;
 }
 
 /* Title properties */
 h1 {
     text-align: center; /* centralize the title */
-    font-weight: 800; /* makes the font more bald */
-    font-size: 20px; /* adjusts font-size */
-    margin-left: 24px;
-    margin-bottom: 24px; /* leaves space under the title */
     letter-spacing: .5px; /* extra spacing in between letters */
-    margin: 0 75px 0; /* controls external space at top right bottom respectively */
+    margin: 0; /* controls external space at top right bottom respectively */
+    padding: 28px 24px 16px;
     font-size: clamp(24px, 4vw, 36px);
-    display: flex;
-    align-items: center;
 }
 
 /* Grid's properties */
-.conteiner-colunas {
-    display: flex; /* converts to CSS grid */
-    grid-template-columns: 4, 1fr; /* creates 4 columns for each fraction of available space */
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 200px;
-    margin: 100px auto;
+.container-columnas {
+  display: flex; /* converts to CSS grid */
+  gap: 20px;
+  display: flex;
+  font-weight: bold;
+  color: var(--white);
 }
 
 .paleta {
     list-style: none; /* erase the by-default circle list format  */
     padding: 0; /* restarts the pattern space browser puts on lists */
     margin: 24px; /* restarts the pattern space browser put on lists */
-    grid-auto-flow: column;
-    row-gap: 10px; /* Vertical space in-between lines */
-    column-gap: 32px; /* Horizontal space in-between columns */
-    font-weight: 700;
     font-size: 18px;
-    width: 100px;
-    height: 100px;
 }
 
 /* Colors - Each class applies a specific text color to the <li> elements */
